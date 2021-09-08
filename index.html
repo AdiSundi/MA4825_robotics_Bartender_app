@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Choose a drink!</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Progressive web app to choose drink for Robotic arm bartender, MA4825 Robotics project, Ay2021-2022, Nanyang Technological University, Singapore">
+    <meta name="keywords" content="Robotic, Robotic-arm, bartender, robotic-bartender, drinks, choose-drink, PWA">
+    <meta name="author" content="Sundaresan Aditya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!--Custom CSS-->
+    <link rel='stylesheet' href="main.css">
+</head>
+
+<body>
+    <nav id="title-navbar-main-top" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bob the Bot Bartender</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Please give us an A+</a>
+                    <a class="nav-link disabled" href="#">Fun easter egg!!!</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-content-wrapper">
+        <div class="row">
+            <div class="col-1"> </div>
+            <div class="col-10">
+                <div id="carousel-wrapper">
+                    <div id="carouselDrinks" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselDrinks" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselDrinks" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselDrinks" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="\Imgs\Martini.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Martini</h5>
+                                    <p>The name's Bond. James Bond.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="\Imgs\Gin_tonic.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Gin and Tonic</h5>
+                                    <p>Keepin' it simple.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="\Imgs\Mimosa.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Mimosa</h5>
+                                    <p>Champagne cocktail, because we pulled this off ¯\_(ツ)_/¯</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <div class="list-group" id="list-to-choose-drinks">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                      Martini
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Gin and Tonic</a>
+                    <a href="#" class="list-group-item list-group-item-action">Mimosa</a>
+                    <a href="#" class="list-group-item list-group-item-action">Gin</a>
+                    <a href="#" class="list-group-item list-group-item-action">Vodka</a>
+                    <a href="#" class="list-group-item list-group-item-action">Champagne</a>
+                </div>
+            </div>
+            <div class="col-1"> </div>
+        </div>
+    </div>
+</body>
+
+</html>
