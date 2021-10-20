@@ -8,7 +8,8 @@ function myFunction(dataToSend) {
     xhr.setRequestHeader("X-Auth-Token", "BBFF-2BoQtMzRrAltynSTpJK7JtbsB3oQ46");
     xhr.setRequestHeader("Authorization", "Bearer BBFF-2BoQtMzRrAltynSTpJK7JtbsB3oQ46");
     xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "adisundi.github.io");
+    xhr.setRequestHeader("Access-Control-Allow-Origin", "https://adisundi.github.io");
+    xhr.setRequestHeader("Origin", "https://adisundi.github.io");
 
 
     xhr.onreadystatechange = function() {
