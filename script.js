@@ -20,7 +20,7 @@ function myFunction(dataToSend) {
     };
 
     var data = `{"drinkno":4,
-     "timestamp":${Date.now}
+     
     }`;
 
     xhr.send(data);
