@@ -6,8 +6,10 @@ function myFunction(dataToSend) {
 
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("X-Auth-Token", "BBFF-2BoQtMzRrAltynSTpJK7JtbsB3oQ46");
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhr.setRequestHeader("Authorization", "Bearer BBFF-2BoQtMzRrAltynSTpJK7JtbsB3oQ46");
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
