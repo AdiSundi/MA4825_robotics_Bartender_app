@@ -6,7 +6,7 @@ function myFunction(dataToSend) {
 
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("X-Auth-Token", "BBFF-2BoQtMzRrAltynSTpJK7JtbsB3oQ46");
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "https://adisundi.github.io/MA4825_robotics_Bartender_app/");
+    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
     xhr.setRequestHeader("Authorization", "Bearer BBFF-2BoQtMzRrAltynSTpJK7JtbsB3oQ46");
 
     xhr.onreadystatechange = function() {
