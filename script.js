@@ -1,5 +1,20 @@
 let intToSend = 0;
 
+function drinkCodeToDrink(drinkCode) {
+    if (drinkCode == 1) {
+        drink = "Jaeger";
+        return drink;
+    }
+    if (drinkCode == 2) {
+        drink = "Red Bull";
+        return drink;
+    }
+    if (drinkCode == 3) {
+        drink = "the mystery drink";
+        return drink;
+    }
+}
+
 function myFunction(drinkCode) {
     if (intToSend > 10) {
         intToSend = 0;
@@ -12,7 +27,14 @@ function myFunction(drinkCode) {
     }
     if (intToSend == 0) {
         intToSend = drinkCode;
-        alert("Choose your second drink!");
+        if (confirm(`You have chosen ${drinkCodeToDrink(drinkCode)}!\n Would you like to mix it with another drink?`)) {
+            alert("Choose your second drink!");
+        } else {
+            intToSend = intToSend + (10 * intToSend);
+            alert("Your order has been placed!");
+            //alert(`sending${intToSend}`);
+            sendData(intToSend);
+        }
     }
 }
 
